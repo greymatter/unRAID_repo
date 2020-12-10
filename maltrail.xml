@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>maltrail</Name>
+  <Repository>greymatter/docker-maltrail</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/greymatter/docker-maltrail/issues/</Support>
+  <Project>https://github.com/greymatter/docker-maltrail/</Project>
+  <Overview>This is a port of the maltrail docker customized for unRAID</Overview>
+  <Category>Security:</Category>
+  <WebUI>http://[IP]:[PORT:8338]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/greymatter/unRAID_repo/main/img/mlogo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1607616883</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This is a port of the maltrail docker customized for unRAID</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8338</HostPort>
+        <ContainerPort>8338</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="8338" Default="8338" Mode="tcp" Description="Web GUI Console Port Mapping" Type="Port" Display="always" Required="true" Mask="false">8338</Config>
+</Container>
